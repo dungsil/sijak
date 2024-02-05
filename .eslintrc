@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "@nuxt"
+  ],
+  "rules": {
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": {
+          "max": 3
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+### .env ###
+.env
+
+### Nuxt ###
+.nuxt/
+.output/
+dist/
+
+### Node.js ###
+node_modules/
+*.log
+*.log*
+
+### IntelliJ IDEA ###
+.idea/
+*.iml

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: sijak_db
+    hostname: ${NUXT_DB_HOST}
+    image: bitnami/postgresql
+    environment:
+      POSTGRESQL_DATABASE: ${NUXT_DB_NAME}
+      POSTGRESQL_USERNAME: ${NUXT_DB_USERNAME}
+      POSTGRESQL_PASSWORD: ${NUXT_DB_PASSWORD}
+      POSTGRESQL_PORT_NUMBER: ${NUXT_DB_PORT}
+    ports:
+      - "${NUXT_DB_PORT}:${NUXT_DB_PORT}"
