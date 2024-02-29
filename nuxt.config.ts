@@ -15,6 +15,10 @@ export default defineNuxtConfig({
 
   // 런타임 설정
   runtimeConfig: {
+    nitro: {
+      envPrefix: 'SIJAK_',
+    },
+
     db: {
       host: 'localhost',
       port: 5432,

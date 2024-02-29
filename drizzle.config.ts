@@ -9,7 +9,7 @@ dotenv.config({
 export default defineConfig({
   driver: 'pg',
   dbCredentials: {
-    connectionString: `postgresql://${process.env.NUXT_DB_USERNAME}:${process.env.NUXT_DB_PASSWORD}@${process.env.NUXT_DB_HOST}:${process.env.NUXT_DB_PORT}/${process.env.NUXT_DB_NAME}`,
+    connectionString: `postgresql://${process.env.SIJAK_DB_USERNAME}:${process.env.SIJAK_DB_PASSWORD}@${process.env.SIJAK_DB_HOST}:${process.env.SIJAK_DB_PORT}/${process.env.SIJAK_DB_NAME}`,
   },
 
   schema: './src/server/database/schemas/',

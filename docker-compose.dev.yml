@@ -3,4 +3,4 @@ version: '3.8'
 services:
   db:
     environment:
-      POSTGRESQL_POSTGRES_PASSWORD: ${NUXT_DB_PASSWORD}
+      POSTGRESQL_POSTGRES_PASSWORD: ${SIJAK_DB_PASSWORD}
