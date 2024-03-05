@@ -21,6 +21,7 @@
     "postgres": "^3.4.3"
   },
   "devDependencies": {
+    "@dungsil/tailwind": "^0.1.2",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxtjs/tailwindcss": "^6.11.3",
     "@pinia/nuxt": "^0.5.1",
