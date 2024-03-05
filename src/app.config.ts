@@ -10,6 +10,7 @@ export default defineAppConfig({
     // middleware/00.auth.global.ts 참고
     paths: {
       loginPage: '/login',
+      authorizeAPI: '/api/authorize',
     } as Record<string, RouteLocationRaw>,
   },
 })

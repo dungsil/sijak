@@ -4,8 +4,8 @@ definePageMeta({ layout: 'login' })
 
 <template>
   <form action="/api/authorize" class="flex flex-col gap-6" method="POST">
-    <input placeholder="username" type="text">
-    <input placeholder="password" type="password">
+    <input name="username" placeholder="username" type="text">
+    <input name="password" placeholder="password" type="password">
 
     <button type="submit">
       로그인
