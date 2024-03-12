@@ -13,3 +13,9 @@ export const userPassword = pgTable('user_password', {
   encryptedPassword: text('encrypted_password').notNull(),
   lastChangedAt: timestamp('last_changed_at', { mode: 'date', withTimezone: true }).notNull().defaultNow(),
 })
+
+export const userSession = pgTable('user_session', {
+  id: text('id').notNull().primaryKey(),
+  userId: bigint('user_id', { mode: 'number' }).notNull().references(() => users.id),
+  expiresAt: timestamp('expires_at', { mode: 'date', withTimezone: true }).notNull(),
+})
